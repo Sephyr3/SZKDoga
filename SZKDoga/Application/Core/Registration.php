@@ -4,6 +4,6 @@ $userDatas  = $_POST;
 $config     = getConfig( $configPath );
 $pdo        = getConnetcion( $config );
 
-insertUser( $pdo, $userDatas );
+Registration( $pdo, $userDatas );
 
 header('Location: index.php');
